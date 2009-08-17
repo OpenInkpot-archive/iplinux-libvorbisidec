@@ -1,0 +1,29 @@
+libvorbisidec (1.0.2+svn15687-1) unstable; urgency=low
+
+  * New upsteam version (minor header cleanup, does not break ABI or API)
+  * updated my e-mail address.
+  * debian/control: switched XS-Dm-Upload-Allowed to Dm-Upload-Allowed.
+  * switched to debhelper >= 7.0.50, minimized debian/rules
+  * debian/rules added get-orig-source target to build new "upstream
+    tarballs" from upstream SVN.
+  * bumped policy to 3.8.1 (no changes needed)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Wed, 01 Apr 2009 13:10:24 -0400
+
+libvorbisidec (1.0.2+svn14261-1) unstable; urgency=low
+
+  * New upstream version.
+  * fixes double-free bug (Closes: #453745)
+  * added Homepage, Vcs-Svn, and Vcs-Browser fields to debian/control.
+  * added XS-Dm-Upload-Allowed: yes to debian/control.
+
+ -- Daniel Kahn Gillmor <dkg-debian.org@fifthhorseman.net>  Sun, 02 Dec 2007 02:19:38 -0500
+
+libvorbisidec (1.0.2+svn12153-1) unstable; urgency=low
+
+  * shipping ivorbisfile_example.c and a simple makefile in examples for
+    libvorbisidec-dev
+  * created BSD debian packaging license to BSD.
+  * Initial release (Closes #167464).
+
+ -- Daniel Kahn Gillmor <dkg-debian.org@fifthhorseman.net>  Wed, 29 Nov 2006 00:27:16 -0500
