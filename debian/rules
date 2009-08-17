@@ -1,11 +1,14 @@
 #!/usr/bin/make -f
-%:
-	dh $@
+# makefile for libmad
 
-override_dh_auto_configure:
-	./autogen.sh --prefix=/usr
+# Uncomment this to turn on verbose mode. 
+#export DH_VERBOSE=1
 
-# fetch a new version of the upstream source, if anything has changed
-# in our directory since the last clean upload.
-get-orig-source:
-	debian/get-orig-source
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_SCRIPT = $(CURDIR)/$(DEB_SRCDIR)/autogen.sh
+
+clean::
+	# annoying lintian errors
+	rm -f config.cache libz/config.log libz/config.status

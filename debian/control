@@ -1,16 +1,14 @@
 Source: libvorbisidec
 Priority: extra
-Maintainer: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Maintainer: Alexander V. Nikolaev <avn@daemon.hole.ru>
 Build-Depends: debhelper (>= 7.0.50), autotools-dev, devscripts, automake, libtool
+XCS-Cross-Host-Build-Depends: debhelper, cdbs, cdbs-embedded, autotools-dev, automake, libtool
 Standards-Version: 3.8.1
-Section: libs
+Section: core
 Homepage: http://wiki.xiph.org/index.php/Tremor
-Vcs-Svn: http://cmrg.fifthhorseman.net/svn/trunk/libvorbisidec
-Vcs-Browser: http://cmrg.fifthhorseman.net/browser/trunk/libvorbisidec
-Dm-Upload-Allowed: yes
 
 Package: libvorbisidec-dev
-Section: libdevel
+Section: core
 Architecture: any
 Depends: libvorbisidec1 (= ${binary:Version}), ${misc:Depends}
 Description: Integer-only Ogg Vorbis decoder, AKA "tremor" (Development Files)
