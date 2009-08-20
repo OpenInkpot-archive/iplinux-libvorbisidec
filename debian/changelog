@@ -1,3 +1,9 @@
+libvorbisidec (1.0.2+svn15687-2.ip1) unstable; urgency=low
+
+  * Upload to IPLinux
+
+ -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 20 Aug 2009 06:17:32 +0300
+
 libvorbisidec (1.0.2+svn15687-1) unstable; urgency=low
 
   * New upsteam version (minor header cleanup, does not break ABI or API)
